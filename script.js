@@ -29,3 +29,22 @@ function menu() {
     else
         $(menu).css("display", "block");
 }
+
+window.onbeforeunload = function () {
+   var keyboardEvent = document.createEvent('KeyboardEvent');
+var initMethod = typeof keyboardEvent.initKeyboardEvent !== 'undefined' ? 'initKeyboardEvent' : 'initKeyEvent';
+
+keyboardEvent[initMethod](
+  'f5', // event type: keydown, keyup, keypress
+  true, // bubbles
+  true, // cancelable
+  window, // view: should be window
+  true, // ctrlKey
+  false, // altKey
+  false, // shiftKey
+  false, // metaKey
+  0, // keyCode: unsigned long - the virtual key code, else 0
+  0, // charCode: unsigned long - the Unicode character associated with the depressed key, else 0
+);
+document.dispatchEvent(keyboardEvent);
+}
