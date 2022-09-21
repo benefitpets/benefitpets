@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefit Pets</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<style>
+    .w3-bar-item {
+        letter-spacing: normal;
+    }
+
+    .img {
+        width: 100%;
+        padding-bottom: 56.25%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    @media screen and (min-width: 683px) {
+        p.w3-large span {
+            font-size: 35px;
+        }
+
+        h3.w3-large b {
+            font-size: 25px;
+        }
+    }
+
+    @media screen and (min-width: 1127px) {
+        button.w3-right {
+            display: none;
+        }
+
+        div.w3-right {
+            display: block;
+            /* font-family: serif; */
+        }
+
+        p.w3-large span {
+            font-size: 50px;
+        }
+
+        h3.w3-large b {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (max-width: 1126px) {
+        div.w3-right {
+            display: none;
+        }
+    }
+</style>
+
+<body onload="readFile();">
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <img class="w3-bar-item" style="margin: 0; width: 75px; padding-right: 0;" src="images/logo.jpeg">
+            <h4 style="margin: 12px 0;"><a href="#home" class="w3-bar-item" style="text-decoration: none;"><b>Benefit
+                        Pets</b></a></h4>
+            <!-- Float links to the right. Hide them on small screens -->
+            <button class="w3-right w3-button" onclick="menu();" style="margin-top: 5px;">
+                <i class="fa-solid fa-bars"></i></button>
+            <div class="w3-right" style="margin-top: 5px;">
+                <span class="w3-bar-item"><i class="fa-solid fa-envelope"></i> benefitpets20@gmail.com</span>
+                <span class="w3-bar-item"><i class="fa-solid fa-phone"></i> +91 97155 40503, +91 98655 38886</span>
+                <span class="w3-bar-item"><i class="fa-solid fa-location-dot"></i> Coimbatore</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px; margin-top: 90px;" id="home">
+        <div class="img" style="text-align: center; padding: 18% 100px;
+            background: linear-gradient(rgba(255, 255, 255, 0.707), rgba(255, 255, 255, 0.707)), url(images/main.jpg) center;
+            background-size: cover;">
+            <p class="w3-large w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BenefitPets</b></span>
+            </p>
+            <h3 class="w3-large w3-text-black"><b>We Serve Pets</b></h3>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content w3-padding" style="max-width:1564px">
+
+        <div class="w3-container w3-padding-32" style="text-align: center">
+            <h4 class="w3-padding-16">We deal with all kinds of breeds <em><b>(native and foreign)</b></em> and also we
+                deal with <em>exotic pets, birds and other pets</em>. Feel free to reach us.</h4>
+            <h4 class="w3-padding-16">Free Door Delivery in <em><b>Coimbatore</b></em> Surrounding.</h4>
+        </div>
+
+        <!-- Availability Section -->
+        <div class="w3-container w3-padding-32" id="projects">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">
+                Pets Availability
+            </h3>
+        </div>
+
+        <div class="w3-row-padding w3-grayscale" style="padding-bottom: 40px;"></div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16" style="line-height: 3;">
+        <p style="margin: 0 5%; display: inline-block;"><i class="fa-solid fa-envelope"></i> benefitpets20@gmail.com</p>
+        <p style="margin: 0 5%; display: inline-block;"><i class="fa-solid fa-phone"></i> +91 9715540503 / 9865538886
+        </p>
+        <p style="margin: 0 5%; display: inline-block;"><i class="fa-solid fa-location-dot"></i> Coimbatore</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
