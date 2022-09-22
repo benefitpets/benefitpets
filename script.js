@@ -2,7 +2,7 @@ function readFile() {
     jQuery.get("input.txt", function (txt) {
         var rows = txt.split(/\r?\n|\r/).slice(1);
         // console.log(rows);
-        for (let i=0; i<rows.length(); i++) {
+        for (let i=0; i<rows.length; i++) {
             var row = rows[i].split(",");
             // console.log(row);
             var html = '\
