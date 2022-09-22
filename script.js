@@ -29,3 +29,5 @@ function menu() {
     else
         $(menu).css("display", "block");
 }
+
+console.log(performance.now())
