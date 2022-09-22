@@ -2,9 +2,8 @@ function readFile() {
     jQuery.get("input.txt", function (txt) {
         var rows = txt.split(/\r?\n|\r/).slice(1);
         // console.log(rows);
-        rows.forEach(e => {
         for (let i=0; i<rows.length(); i++) {
-            var row = e.split(",");
+            var row = rows[i].split(",");
             // console.log(row);
             var html = '\
             <div class="w3-col l3 m6 w3-margin-bottom">\
