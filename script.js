@@ -2,9 +2,8 @@ function readFile() {
     jQuery.get("input.txt", function (txt) {
         var rows = txt.split(/\r?\n|\r/).slice(1);
         // console.log(rows);
-        var row = $(".w3-row-padding.w3-grayscale")[0];
-        console.log(row);
         rows.forEach(e => {
+        for (let i=0; i<rows.length(); i++) {
             var row = e.split(",");
             // console.log(row);
             var html = '\
@@ -18,7 +17,7 @@ function readFile() {
             </div> \
             ';
             $(".w3-row-padding.w3-grayscale").append(html);
-        });
+        }
     });
 }
 
